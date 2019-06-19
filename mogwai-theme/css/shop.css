@@ -1,0 +1,96 @@
+figcaption a{
+	-moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+	background:-moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:-ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100',GradientType=0);
+	background-color:#fe1a00;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d83526;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+
+/*figcaption a:link {}*/
+/*figcaption a:visited {}*/
+/*figcaption a:hover {}*/
+/*figcaption a:active {}*/
+
+
+.wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption{
+font-size: 18px;
+font-family: Lucida Sans Unicode;
+}
+
+
+    .entry-content .alignwide {
+        margin-left  : -80px;
+        margin-right : -80px;
+    }
+    .entry-content .alignfull {
+        margin-left  : calc( -100vw / 2 + 100% / 2 );
+        margin-right : calc( -100vw / 2 + 100% / 2 );
+        max-width    : 100vw;
+    }
+    .alignfull img {
+        width: 100vw;
+    }
+    
+    
+.container--narrow {
+    max-width: 1400px;
+        /*width: 1400px;*/
+    }
+
+    
+.blocks-gallery-item figure{
+    /*border: 1px solid red;*/
+}
+
+.wp-block-gallery .blocks-gallery-item figcaption {
+    padding: 0;
+    padding-top:15px;
+    padding-bottom: 8px;
+    
+}
+
+@media (min-width: 600px){
+ .wp-block-gallery.columns-3 .blocks-gallery-item {
+    width: calc((100% - 32px)/2);
+    margin-right: 16px
+}
+}
+
+@media (min-width: 1200px){
+ .wp-block-gallery.columns-3 .blocks-gallery-item {
+        width: calc((100% - 32px)/3);
+    margin-right: 16px
+}
+}
+
+
+@media only screen and (max-width: 600px) {
+  .columns-3 {
+     flex-direction: column;
+  }
+  
+ .wp-block-gallery .blocks-gallery-image, .wp-block-gallery .blocks-gallery-item {
+      width: calc(100% - 16px);
+  }
+}
+
+
+
